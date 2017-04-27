@@ -1,0 +1,35 @@
+﻿@model EmployeeModel.Models.Organization
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Organization</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.orgParentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orgParentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.orgName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orgName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.orgId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

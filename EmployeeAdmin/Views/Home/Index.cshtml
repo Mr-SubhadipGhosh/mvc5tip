@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Employee Admin</h1>
+    <p class="lead">Employee Admin is a Organization lavel Application. To access Branch section please click</p>
+    <p><a href="http://localhost:3826/" class="btn btn-primary btn-large">Here &raquo;</a></p>
+</div>
+
+<div class="row">
+    <h2>Getting started</h2>
+    <p>
+        Application required login. Before you access any section , please do login.
+    </p>
+    <p>@Html.ActionLink("Login", "login", "account")</p>
+</div>

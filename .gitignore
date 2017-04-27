@@ -1,0 +1,8 @@
+**/bin/**/*.*
+**/obj/**/*.*
+**/Migrations/**/*.*
+**/App_Data/*.mdf
+**/App_Data/*.ldf
+packages/
+
+

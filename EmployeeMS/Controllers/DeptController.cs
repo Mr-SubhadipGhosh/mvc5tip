@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using EmployeeModel.Models;
 using EmployeeMS.Models;
+using Utility;
 
 namespace EmployeeMS.Controllers
 {
@@ -17,6 +18,8 @@ namespace EmployeeMS.Controllers
         private EmployeeMSContext db = new EmployeeMSContext();
 
         // GET: /Dept/
+
+        [CustomFilter]
         public ActionResult Index()
         {
             return View(db.Depts.ToList());

@@ -64,7 +64,7 @@ namespace EmployeeMS.Controllers
 
         //
         // GET: /Account/Register
-        [AllowFilter(guest=true,errorRedirect="home/index")]
+        [AllowFilter(guest=false,errorRedirect="~/home/index")]
         [AllowAnonymous]
         public ActionResult Register()
         {

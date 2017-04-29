@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using EmployeeBLL;
 namespace EmployeeMSTest
 {
     [TestClass]
@@ -8,12 +9,14 @@ namespace EmployeeMSTest
         [TestMethod]
         public void TestIndex()
         {
-            Assert.IsNotNull("yes");
+            var empLogic = new EmpLogic();
+            Assert.AreEqual("abc", empLogic.getEmpFullName(0));
         }
         [TestMethod]
         public void TestEdit()
         {
-            Assert.AreEqual("yes", "yes" );
+            var empLogic = new EmpLogic();
+            Assert.AreEqual("xyz", empLogic.getEmpFullName(1));
 
         }
     }

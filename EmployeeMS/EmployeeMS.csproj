@@ -259,6 +259,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmployeeBLL\EmployeeBLL.csproj">
+      <Project>{3df07513-4eea-40e2-bad0-d1d6fdcc434c}</Project>
+      <Name>EmployeeBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EmployeeModel\EmployeeModel.csproj">
       <Project>{2e73fdf9-d98d-430b-92cd-515a494748b6}</Project>
       <Name>EmployeeModel</Name>

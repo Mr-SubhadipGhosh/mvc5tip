@@ -15,11 +15,16 @@ namespace Utility
         {
             if (!guest)
             {
-                bool check = filterContext.Controller.ViewData.ContainsKey("allow");
-                if (!(check && !(bool)filterContext.Controller.ViewBag.allow))
-                {
-                    filterContext.Result = new RedirectResult(errorRedirect);
-                }
+                //bool check = filterContext.Controller.ViewData.ContainsKey("allow");
+                
+                //if (check)
+                //{
+                //    if (!(bool)filterContext.Controller.ViewBag.allow)
+                //    {
+                //        filterContext.Result = new RedirectResult(errorRedirect);
+                //    }
+                //}
+                filterContext.Result = new RedirectResult(errorRedirect);
             }
 
             base.OnActionExecuted(filterContext);

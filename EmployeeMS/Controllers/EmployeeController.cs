@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using EmployeeModel.Models;
 using EmployeeMS.Models;
+using EmployeeBLL;
 
 namespace EmployeeMS.Controllers
 {
@@ -19,6 +20,7 @@ namespace EmployeeMS.Controllers
         // GET: /Employee/
         public ActionResult Index()
         {
+          ViewBag.empBLLCheck =  (new EmpLogic()).getEmpFullName(1);
             var employees = db.Employees.Include(e => e.deptOfEmp);
             return View(employees.ToList());
         }

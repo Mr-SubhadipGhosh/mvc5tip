@@ -24,6 +24,6 @@ namespace EmployeeMS.Models
         public System.Data.Entity.DbSet<EmployeeModel.Models.Employee> Employees { get; set; }
 
         public System.Data.Entity.DbSet<EmployeeModel.Models.Manager> Managers { get; set; }
-    
+       
     }
 }
